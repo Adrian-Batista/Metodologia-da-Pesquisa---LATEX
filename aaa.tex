@@ -1,13 +1,17 @@
 \documentclass{book}
 \usepackage[utf8]{inputenc}
+\usepackage[datesep=/,style=ddmmyyyy]{datetime2}
+\renewcommand*\contentsname{Sumário}
 
 \title{Hello World!}
 \author{Adrian Batista}
-\date{Março 2021}
+\date{\today}
 
 \begin{document}
 
 \maketitle
+
+\tableofcontents
 
 \input{introducao}
 \input{desenvolvimento}
