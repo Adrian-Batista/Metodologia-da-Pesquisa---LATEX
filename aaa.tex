@@ -1,7 +1,12 @@
 \documentclass{book}
 \usepackage[utf8]{inputenc}
 \usepackage[datesep=/,style=ddmmyyyy]{datetime2}
+\usepackage{biblatex}
+
+
+\addbibresource{referencias.bib}
 \renewcommand*\contentsname{Sumário}
+
 
 \title{Hello World!}
 \author{Adrian Batista}
@@ -9,12 +14,11 @@
 
 \begin{document}
 
-\maketitle
-
-\tableofcontents
-
+\maketitle %pagina inicial
+\tableofcontents %sumário
 \input{introducao}
 \input{desenvolvimento}
 \input{conclusoes}
+\printbibliography %bibliografia
 
 \end{document}
